@@ -1,0 +1,84 @@
+Un banco necesita realizar un sistema de evaluación preliminar para otorgar un crédito, a fin de mejorar el tiempo de validación y que los potenciales clientes puedan saber de manera más rápido a quiénes se les pudiera otorgar un crédito.
+
+De acuerdo a la última reunión innecesaria, a las 6:00 p.m. un día sábado, se presentaron las siguientes condicionales.
+
+El prospecto debe tener al menos 21 años de edad, debe tener un ingreso de al menos 8,500 mensuales, debe tener al menos 5 años de historial crediticio y dicho historial crediticio deberá ser positivo, es decir, que siempre han pagado a tiempo, finalmente, el monto del crédito deberá ser de al menos $10,000.
+
+Después de una discusión acalorada donde la Lic. Petra comenzó a llorar defendiendo a la gente de bajos recursos, se llegó al siguiente acuerdo, fue horrible, la reunión terminó a las 9:00 p.m., pero al final, todos abrazaron a la Lic. Petra y oraron por ella, hubo galletas y café para todos. Se llegaron a los siguientes acuerdos.
+
+El prospecto deberá tener al menos 18 años de edad, con un ingreso de al menos $4,000 al mes, deberá tener al menos 2 años trabajando, ya no se revisará su historial crediticio y se estableció a que el préstamo máximo sería de máximo un 15% del salario mensual del prospecto multiplicado por 12 mensualidades. Adicionalmente, si el prospecto tiene al menos $10,000 de saldo en su cuenta de banco o si el préstamo es para una cuestión médica, su crédito será aprobado automáticamente.
+
+El reporte deberá mostrar la edad del prospecto, su ingreso mensual, de cuánto sería el monto máximo del préstamo y su crédito será aprobado o no.
+Algoritmo ejemplo
+	Definir cantidad_dinero Como Entero
+    Definir edad Como Entero
+    Definir saldo_en_cuenta_de_banco, cuenta_médica , aplicable_credito Como Logico
+    
+    Escribir "Ingrese la cantidad de dinero mensual:"
+    Leer cantidad_dinero 
+    
+    Escribir "Ingrese edad:"
+    Leer edad
+    
+    Escribir "¿aprobado automáticamente si sitiene $10,000 de saldo en el banco ? (1 = Sí, 0 = No):"
+    Leer  saldo_en_cuenta_de_banco_medica
+	
+	Escribir "¿aprobado automáticamente si medica? (1 = Sí, 0 = No):"
+    Leer  saldo_en_medica
+    
+    Escribir "¿llevas 2 años trabajando en la misma enpresa? (1 = Sï, 0 = No):"
+    Leer años_trab
+    
+    c1 = cantidad_dinero > 4000    
+    c2 = edad >= 18
+	c3 =años_tra >= 2
+	C4 = cantidad_dinero*0.15*12
+    
+    Escribir c1
+    Escribir c2
+	Escribir c3
+	Escribir C4
+    Escribir saldo_en_cuenta_de_banco
+	Escribir saldo_en_medica
+    Escribir años_trab
+    // Evaluación de descuento
+    aplicable_credito <- (c1)  Y (c2) Y (C3) O edad_u O años_trab O saldo_en_cuenta_de_banco O saldo_en_medica
+    //resultados 
+	Escribir "";
+	Escribir "edad es"
+	Escribir edad
+	Escribir "";
+	Escribir "su ingreso mensual"
+	Escribir cantidad_dinero
+	Escribir "";
+	Escribir "prestamos del credito"
+	Escribir c4
+	Escribir  " CREDITO APLICABLE: ", aplicable_credito
+	
+FinAlgoritmo
+*** Ejecución Iniciada. ***
+Ingrese la cantidad de dinero mensual:
+	> 5555
+Ingrese edad:
+	> 19
+¿aprobado automáticamente si sitiene $10,000 de saldo en el banco ? (1 = Sí, 0 = No):
+		> 1
+	¿aprobado automáticamente si medica? (1 = Sí, 0 = No):
+			> 1
+		¿llevas 2 años trabajando en la misma enpresa? (1 = Sï, 0 = No):
+			> 1
+			VERDADERO
+			VERDADERO
+			FALSO
+			9999
+			FALSO
+			VERDADERO
+			VERDADERO
+			
+			edad es
+			19
+			
+			su ingreso mensual
+5555
+
+
