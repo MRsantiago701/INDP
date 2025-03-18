@@ -1,0 +1,56 @@
+Una primaria necesita un sistema para calcular las calificaciones, pero dependiendo del grado varían las materias y eso genera un trabajo más complejo para poder calcular el promedio de cada alumno correctamente.
+
+La directora quiere que los maestros puedan ingresar el nombre del alumno que van a evaluar, después cuántas materias van a calificar, después, ingresar cada calificación, si el resultado es mayor a 6, deberá mostrar un mensaje que aprobó, si es menor, deberá mostrar un mensaje que necesitará recursamiento y si la calificación es igual a 10, deberá mostrar un mensaje que es un alumno destacado.
+
+Al final, el programa debe mostrar un reporte con el nombre del alumno, su promedio final y el mensaje que dependerá de su calificación.
+Algoritmo alomnos
+	escribir " nombre del alumno "
+	Leer A
+	Escribir " ingresa cuantas materias "
+	leer t
+	para i <- 1 Hasta t Hacer
+		Escribir " materia ",i ,":"
+		Leer materia
+		Escribir " hagre gado ", materia
+		Escribir " ingresa calificasion "
+		Leer calificasion
+		suma = suma+calificasion
+		
+	FinPara
+	pro=suma / t
+	
+	
+	si calificasion > 6 Entonces
+		Escribir " APROBO"
+	SiNo
+		Escribir " NECESITA RECURSAR "
+	FinSi
+	si calificasion >= 10 Entonces
+		Escribir " ALUMNO DESTACADO "
+	
+	FinSi
+	
+	Escribir "el nombre del alumno_____" A
+	Escribir "promedio del alumno______" pro
+
+FinAlgoritmo
+*** Ejecución Iniciada. ***
+ nombre del alumno
+> max
+ ingresa cuantas materias
+> 2
+ materia 1:
+> mate
+ hagre gado mate
+ ingresa calificasion
+> 13
+ materia 2:
+> fisi
+ hagre gado fisi
+ ingresa calificasion
+> 10
+ APROBO
+ ALUMNO DESTACADO
+el nombre del alumno_____max
+promedio del alumno______11.5
+*** Ejecución Finalizada. ***
