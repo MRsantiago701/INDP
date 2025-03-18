@@ -1,0 +1,69 @@
+Una zapatera necesita registrar los datos de sus vendedores y los datos de las ventas individuales para calcular algunos estándares de calidad a fin de mejorar la productividad y otorgar bonos, así como "cortar cabezas". 
+
+El sistema debe solicitar el a cuántos vendedores se va a registrar su información y de cada vendedor debe solicitar cuántas ventas realizó y de cuánto fue el valor de cada una. 
+
+Después de terminar el registro de las ventas, debe mostrar el total de las ventas de ese vendedor, el número de ventas que hizo y su venta más alta. Si la venta más alta es menor a $100 o el total es menor de $1,500, debe mostrar un mensaje de que pase a Recursos Humanos. 
+
+El reporte final debe entregar un reporte de cuántos vendedores se registraron en el sistema y cuánto fue el total de las ventas globales de la empresa . Si el reporte global es mayor a $20,000 deberá mostrar un mensaje de que se alcanzó la meta , de lo contrario mostrará un mensaje que habrá que convocar una reunión .
+Algoritmo zapateria
+	Escribir " zapateria"
+	Escribir "Ingrese los vendedores a registrar:"
+    Leer vr
+    
+    tvr <- 0
+    
+    Para i <- 1 Hasta vr Hacer
+        Escribir "Ingrese el nombre del vendedor ", i, ":"
+        Leer n
+        
+        Escribir "Ingrese ventas realizadas por ", n, ":"
+        Leer nv
+        
+        totaldeVentasdelVendedor <- 0
+        ventaMasAlta <- 0
+        
+        Para m <- 1 Hasta nv Hacer
+            Escribir "Ingrese el monto de la venta ", m, ":"
+            Leer montodeVenta
+            
+            totaldeVentasdelVendedor <- totaldeVentasdelVendedor + montodeVenta
+            
+            Si montodeVenta > ventaMasAlta Entonces
+                ventaMasAlta <- montodeVenta
+            FinSi
+        FinPara
+        
+        Escribir "Resumen de ventas de ", n, ":"
+        Escribir "Total de ventas: $", totaldeVentasdelVendedor
+        Escribir "Número de ventas: ", nv
+        Escribir "Venta más alta: $", ventaMasAlta
+        
+        Si ventaMasAlta < 100 O totaldeVentasdelVendedor < 1500 Entonces
+            Escribir "Debe pasar a Recursos Humanos."
+        FinSi
+        
+        totalVentasmaxima <- totalVentasmaxima + totaldeVentasdelVendedor
+    FinPara
+    
+    Escribir "Resumen final de la empresa:","zapateria"
+    Escribir "Total de vendedores registrados: ", vr
+    Escribir "Total de ventas globales: $", totalVentasmaxima
+    
+    Si totalVentasmaxima > 20000 Entonces
+        Escribir "Se alcanzó la meta felicidades."
+    Sino
+        Escribir "Habrá que convocar una reunión."
+    FinSi
+> 2
+Ingrese el monto de la venta 2:
+> 2
+Resumen de ventas de leo:
+Total de ventas: $4
+Número de ventas: 2
+Venta más alta: $2
+Debe pasar a Recursos Humanos.
+Resumen final de la empresa:zapateria
+Total de vendedores registrados: 2
+Total de ventas globales: $8
+Habrá que convocar una reunión.
+*** Ejecución Finalizada. ***
