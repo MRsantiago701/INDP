@@ -1,0 +1,132 @@
+La abarrotera "Kamarena" necesita trabajar en un sistema que le ayude a registrar de manera fácil y rápida todos sus pedidos, hubo una explosión en el mercado al otro lado de la ciudad y ellos han quedado como el único lugar disponible para comprar, esa idea de poner una bomba ha salido terriblemente bien (no hubo ningún herido).
+
+Mientras el dueño sigue luchando entre entregarse a las autoridades por lo sucedido y pedir perdón a las familias involucradas, ha pedido a su asesor externo, el "Teclas" que le ayude con un sistema.
+
+Para ingresar al sistema debe pedir una contraseña (Mientras), que debe ser una fecha de nacimiento en formato YYYY-MM-DD, una vez en el sistema, debe preguntar si (Si) quiere hacer registros de zanahorias o de tomates.
+
+Si elige zanahorias, deberá pedir que se ingresen cuántas cajas deberá ingresar (Para), como cada caja tiene un valor diferente, habrá que ingresarlo manualmente una por una.
+
+Si elige tomates, deberá ingresar cuantas cajas se necesiten y cuando escriba el número 100001 deberá terminar de registrar (Mientras).
+
+En ambos casos, deberá qué opción se eligió y mostrar cuántas cajas se añadieron, cuánto fue el total del peso y cuánto fue el costo total de esa venta, las zanahorias cuestan $15.84 el kilo y los tomates cuestan $11.34 el kilo, si (Si) la venta supera los $10,000, se le hará un descuento automático del 7.5% del valor total.
+
+Finalmente, deberá preguntar si (Si) el cliente necesita o no envío, si requiere envío deberá añadir $150 más a su pedido, de lo contrario, mostrará el precio anterior.
+
+Algoritmo abarrotes_karen
+	Escribir "gracias por su preferencia abarrotes karen"
+	
+	Escribir " ingresa contraseña (formato yyy-mm-dd)"
+	Leer ctd
+	Mientras ctd <> "2006-09-07" Hacer
+		Escribir "contraseña incorrecta, intentar de nuevo"
+		leer ctd
+	FinMientras
+	
+	escribir "selecciona su regitro (1) zanahorias (2) tomates "
+	leer sr
+	//
+	suma=0
+	cost=0
+	//
+	si sr = 1 Entonces
+		Escribir "cuantas cajas de zanahoria se comprar"
+		leer j
+		
+		para e = 1 Hasta j
+			Escribir "ingresa el peso de cajas",e,":"
+			Leer kg
+			suma=suma+kg
+			valor_de_caja=kg*15.84
+			
+			Escribir "el valor de caja es:...-->",valor_de_caja
+			cost=cost+valor_de_caja
+		FinPara
+		
+		Escribir "ingresa caga de zanahoria"
+		Escribir "caja ingresada...-->",j
+		Escribir "peso total...-->",suma,"kg"
+		Escribir "precio total...-->",cost
+		des=cost*0.75
+		si cost >= 10000 Entonces
+			Escribir "se le hará un descuento automático del 7.5% del valor total si la venta supera los $10,000.",des
+			Escribir "necesitas envio?"
+			leer nv
+			total_final=des+150
+			si nv = "si" Entonces
+				Escribir "el envio tiene un costo de: $150"
+				Escribir "su cuenta final seria de: $",cost_fi
+				
+			FinSi
+		SiNo
+			cost_fn=cost+150
+			si cost < 10000 Entonces
+				Escribir "necesitas envio"
+				Leer ml
+				
+				si ml = "si" Entonces
+					Escribir "el envio tiene un costo de: $150"
+					Escribir "su cuenta final seria de: $",cost_fn
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	peso_cmm=20
+	precio=11.34
+	si sr = 2 Entonces
+		Escribir "cuantas cajas de (20)kg tomates  necesitas"
+		Leer md
+		peso=peso_cmm*md
+		precio_ff=precio*peso
+		
+		Escribir "ingreso cajas de tomates"
+		Escribir "cajas ingresadas ...-->",md
+		Escribir "el peso total...-->",peso "kg"
+		Escribir "total del precio...-->",precio_ff
+		precio_des=precio_ff*0.75
+		env=precio_des+150
+		
+		si precio_tot >=10000 Entonces
+			Escribir "se le a agregado un descuento del 7.5% ahora su cuenta es de: $",precio_des
+		    escribir "necesita envio"
+			leer tt
+			si tt = "si" Entonces
+				Escribir "el envio tiene un costo de $150"
+				Escribir"su cuenta final es de: $",env
+			FinSi
+		FinSi
+		envg=precio_ff+150
+		si precio_ff < 10000 Entonces
+			Escribir "escibe si necesitas envio (si) O (no)"
+			Escribir "---> necesita envio <---"
+			leer m
+			si m = "si" Entonces
+				Escribir "el envio tiene un costo de: $150"
+				Escribir "su cuenta final seeria de: $",envg
+			FinSi
+		FinSi
+		mientras w <> 100001 Hacer
+			Escribir "ingresa (100001) para salir"
+			leer w
+		
+		
+		FinMientras
+	FinSi
+	
+FinAlgoritmo
+*** Ejecución Iniciada. ***
+gracias por su preferencia abarrotes karen
+ ingresa contraseña (formato yyy-mm-dd)
+> 2006-09-07
+selecciona su regitro (1) zanahorias (2) tomates
+> 2
+cuantas cajas de (20)kg tomates  necesitas
+> 1000
+ingreso cajas de tomates
+cajas ingresadas ...-->1000
+el peso total...-->20000kg
+total del precio...-->226800
+ingresa (100001) para salir
+> 100001
+*** Ejecución Finalizada. ***
+		
