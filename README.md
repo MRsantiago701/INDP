@@ -11,5 +11,7 @@ This example
 univercidad : upen
 This example  
 Descripción breve de la materia: enseña los principios básicos del desarrollo de software. 
+This example
 Incluye conceptos como algoritmos, estructuras de control (condicionales y ciclos),
+This example
 tipos de datos, funciones y estructuras de datos básicas
