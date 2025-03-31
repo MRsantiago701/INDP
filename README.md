@@ -13,6 +13,7 @@ univercidad : upen
 Descripción breve de la materia : enseña los principios básicos del desarrollo de software. 
 
 Incluye conceptos como algoritmos y (Tipos de operadores, Tipos de datos)
+
 [Ir a Unidad 1](https://github.com/MRsantiago701/INDP/tree/main/U1)
 
 Unidad 2
