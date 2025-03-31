@@ -19,3 +19,5 @@ Incluye conceptos como algoritmos y (Tipos de operadores, Tipos de datos)
 Unidad 2
 
 Descripción breve de la unidad: desarrollo de programas en pseint con (Códigos IF, Códigos for, codigo While, )
+
+[Ir a Unidad 2](https://github.com/MRsantiago701/INDP/tree/main/U2)
