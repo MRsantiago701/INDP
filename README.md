@@ -10,8 +10,8 @@ Carrera : ingenieria en tecnologias de la informacion e innovacion digital
  
 univercidad : upen
 
-Descripción breve de la materia: enseña los principios básicos del desarrollo de software. 
+Descripción breve de la materia : enseña los principios básicos del desarrollo de software. 
 
-Incluye conceptos como algoritmos, estructuras de control (condicionales y ciclos),
+Incluye conceptos como algoritmos y (Tipos de operadores, Códigos IF, Códigos for, codigo While, Subprograms)
 
-tipos de datos, funciones y estructuras de datos básicas
+
