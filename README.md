@@ -20,4 +20,13 @@ Unidad 2
 
 Descripción breve de la unidad: desarrollo de programas en pseint con (Códigos IF, Códigos for, codigo While, )
 
+
 [Ir a Unidad 2](https://github.com/MRsantiago701/INDP/tree/main/U2)
+
+Unidad 3
+
+Descripción breve de la unidad: aprendimos una aplicasion nueva como herramienta que es GitHub 
+
+para que no ayudaria y vimos Subprograms como (for1 , for2 , if1 , if2 ,while ,)
+
+[Ir a Unidad 3](https://github.com/MRsantiago701/INDP/tree/main/u3)
