@@ -12,6 +12,9 @@ univercidad : upen
 
 Descripción breve de la materia : enseña los principios básicos del desarrollo de software. 
 
-Incluye conceptos como algoritmos y (Tipos de operadores, Códigos IF, Códigos for, codigo While, Subprograms)
-
+Incluye conceptos como algoritmos y (Tipos de operadores, Tipos de datos)
 [Ir a Unidad 1](https://github.com/MRsantiago701/INDP/tree/main/U1)
+
+Unidad 2
+
+Descripción breve de la unidad: desarrollo de programas en pseint con (Códigos IF, Códigos for, codigo While, )
