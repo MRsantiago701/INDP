@@ -7,6 +7,8 @@ Materia : Fundamentos de programacion
 Nombre completo : maximo santiago romero
 
 Carrera : ingenieria en tecnologias de la informacion e innovacion digital
+
+cuatrimestre : 1
  
 univercidad : upen
 
